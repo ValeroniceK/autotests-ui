@@ -4,16 +4,60 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        h6 {
+        font-size: 15px
+        }
+
         .h2-text {
             color: red
         }
+
+        .h6-text {
+            color: yellow
+        }
+
+        #h1-text {
+            font-size: 50px
+        }
+
+        div.python > a {
+            color: green
+        }
+
+        ul li {
+            color: green
+        }
+
+        input[type="text"] {
+           background-color: blue;
+        }
+
+        input[type="text"]:hover {
+           background-color: purple
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        li::marker {
+            color: red
+        }
+
+        ul > li:nth-child(2) {
+            color: blue
+        }
+
+
     </style>
 </head>
 <body>
-<div>
-    <h1 id="h1 text">H1 text</h1>
+<div class="python">
+    <h1 id="h1-text">H1 text</h1>
+    <h1>H1 text 2</h1>
+    <h1>H11 text 2</h1>
     <h2 class="h2-text">H2 text</h2>
-    <h6>H6 text</h6>
+    <h6 class="h2-text h6-text">>H6 text</h6>
     <p>Full-featured test runner with auto-waiting, <span style="color: green">assertions</span>, tracing,
         and parallelism across Chromium, Firefox, and WebKit.</p>
     <a href="https://playwright.dev/python/docs/intro" target="_blank">Python</a>
@@ -57,6 +101,22 @@
         </tr>
         </tbody>
     </table>
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <h6>3</h6>
+        <h5>4</h5>
+        <p>5</p>
+    </div>
+</div>
+<div class="javascript">
+    <h2 class="h2-text">H2 text</h2>
+    <a href="https://www.javascript.com/" target="_blank">Javascript</a>
+     <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 </div>
 </body>
 </html>
