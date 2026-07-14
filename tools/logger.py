@@ -13,7 +13,7 @@ def get_logger(name: str) -> logging.Logger:
     formatter = logging.Formatter('%(asctime)s | %(name)s | %(levelname)s | %(message)s')
     handler.setFormatter(formatter)  # Применяем форматтер к обработчику
 
-    # Добавляем обработчик к логгеру
+    # Добавляем обработчик к логгеру.
     logger.addHandler(handler)
 
     return logger
